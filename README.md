@@ -1,0 +1,1 @@
+# Some useful function to manipulate string in C

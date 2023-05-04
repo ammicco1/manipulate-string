@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#define _MATCH_SIZE_ 10
+#define _MATCH_SIZE_ 64
 
 int count_char(char *, char);
 

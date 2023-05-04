@@ -1,6 +1,4 @@
 #include "./manipulate_string.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 int count_char(char *str, char sig){
     int i, counter = 0, len = strlen(str);
@@ -93,7 +91,7 @@ int str_regex_contains(char *str, char *pattern){
 	    return -1;
 	}
 
-    if(regcomp(&regex, pattern, REG_ICASE | REG_EXTENDED) != 0){
+    if(regcomp(&regex, pattern, REG_ICASE | REG_EXTENDED) != 0){ 
         regfree(&regex);         
   
         return -1;
@@ -104,10 +102,10 @@ int str_regex_contains(char *str, char *pattern){
 
 	    regfree(&regex);
 	
-	    return 1;
+	    return 0;
     }else{
         regfree(&regex);
 
-	    return 0;
+	    return 1;
 	}
 }
